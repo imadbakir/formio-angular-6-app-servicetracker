@@ -22,7 +22,7 @@ You can also use this application with your own Form.io project. This will use t
 the data for this application. 
 
 1. First login or create an account @ [Form.io](https://portal.form.io)
-2. Create a new project called "Event Manager"
+2. Create a new project called "Service Tracker"
 3. Under Advanced Options, click on **Upload A Project Template**, then select the **```/src/project.json```** file from this repository.
   
     ![](https://monosnap.com/file/yITvSniWzfdYJPLdfhC4bWHZEd9LBq.png)
