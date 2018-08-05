@@ -2,7 +2,7 @@ Angular 6 & Form.io Starter Application
 ====================================
 This is a starter application that uses [Angular](https://angular.io), [Bootstrap 4](https://getbootstrap.com/), [Angular CLI](https://cli.angular.io), and [Form.io](https://form.io) to create an example service tracker application.
 
-This project was based on [formio-app-servicetracker](https://github.com/formio/formio-app-servicetracker) [angular-app-starterki](https://github.com/formio/angular-app-starterkit) and [angular-formio](https://github.com/formio/angular-formio) 
+This project was based on [formio-app-servicetracker](https://github.com/formio/formio-app-servicetracker), [angular-app-starterki](https://github.com/formio/angular-app-starterkit) and [angular-formio](https://github.com/formio/angular-formio) 
 
 
 Usage
