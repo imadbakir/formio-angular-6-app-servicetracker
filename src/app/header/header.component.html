@@ -1,15 +1,28 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><img class="logo" src="https://form.io/assets/images/formio-logo.png" /></a>
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="https://form.io/assets/images/formio-logo.png" />
+    </a>
     <ul class="nav navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="home"><i class="fa fa-home"></i></a>
+      <li class="nav-item" ng-class="{active: isActive('home')}">
+        <a  class="nav-link" routerLink="home">
+          <i class="fa fa-home"></i>
+        </a>
       </li>
-      <li class="nav-item" routerLinkActive="user" *ngIf="auth.is.administrator">
-        <a class="nav-link" routerLink="user">Users</a>
+      <li *ngIf="auth.is.contractor" class="nav-item">
+        <a class="nav-link" routerLink="appointment">Appointments</a>
       </li>
-      <li class="nav-item" routerLinkActive="event" *ngIf="auth.authenticated">
-        <a class="nav-link" routerLink="event">Events</a>
+      <li *ngIf="auth.is.contractor" class="nav-item">
+        <a class="nav-link" routerLink="customer">Customers</a>
+      </li>
+      <li *ngIf="auth.is.dealer" class="nav-item">
+        <a class="nav-link" routerLink="dealer/{{auth.user._id}}/customer">Customers</a>
+      </li>
+      <li *ngIf="auth.is.dealer" class="nav-item">
+        <a class="nav-link" routerLink="dealer/{{auth.user._id}}/contractor">Contractors</a>
+      </li>
+      <li *ngIf="auth.is.administrator" class="nav-item">
+        <a class="nav-link" routerLink="dealer">Dealers</a>
       </li>
     </ul>
     <ul class="nav navbar-nav ml-auto">
@@ -17,7 +30,8 @@
         <a class="nav-link" routerLink="auth">Login | Register</a>
       </li>
       <li class="nav-item" *ngIf="auth.authenticated">
-        <a class="nav-link" routerLink="home" (click)="auth.logout()"><span class="glyphicon glyphicon-off"></span> Logout</a>
+        <a class="nav-link" routerLink="home" (click)="auth.logout()">
+          <span class="glyphicon glyphicon-off"></span> Logout</a>
       </li>
     </ul>
   </div>

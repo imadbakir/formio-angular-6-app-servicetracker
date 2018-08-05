@@ -12,15 +12,18 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 
 import { AuthModule } from './auth/auth.module';
-import { EventModule } from './event/event.module';
 import { UserModule } from './user/user.module';
+import { CustomerModule } from './customer/customer.module';
+import { DealerModule } from './dealer/dealer.module';
+import { AppointmentModule } from './appointment/appointment.module';
+import { ContractorModule } from './contractor/contractor.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    HeroComponent
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,8 +43,16 @@ import { UserModule } from './user/user.module';
         loadChildren: () => AuthModule
       },
       {
-        path: 'event',
-        loadChildren: () => EventModule
+        path: 'appointment',
+        loadChildren: () => AppointmentModule
+      },
+      {
+        path: 'customer',
+        loadChildren: () => CustomerModule
+      },
+      {
+        path: 'dealer',
+        loadChildren: () => DealerModule
       },
       {
         path: 'user',
