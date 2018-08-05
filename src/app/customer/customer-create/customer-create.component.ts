@@ -27,10 +27,12 @@ export class CustomerCreateComponent extends FormioResourceCreateComponent imple
   ngOnInit() {
     super.ngOnInit();
 
+    /*
+
     // Wait for the parent event to be loaded.
     this.service.resources['event'].resourceLoaded.then((event) => {
 
-      // Wait for the customer form to load.
+      // Wait for the contractor form to load.
       this.service.formLoaded.then((form) => {
 
         // If they wish to have a custom registration form.
@@ -52,6 +54,6 @@ export class CustomerCreateComponent extends FormioResourceCreateComponent imple
           });
         });
       });
-    });
+    }); */
   }
 }

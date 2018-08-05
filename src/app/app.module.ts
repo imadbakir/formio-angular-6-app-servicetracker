@@ -16,7 +16,6 @@ import { UserModule } from './user/user.module';
 import { CustomerModule } from './customer/customer.module';
 import { DealerModule } from './dealer/dealer.module';
 import { AppointmentModule } from './appointment/appointment.module';
-import { ContractorModule } from './contractor/contractor.module';
 
 @NgModule({
   declarations: [

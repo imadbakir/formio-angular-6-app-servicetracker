@@ -27,6 +27,7 @@ export class ContractorCreateComponent extends FormioResourceCreateComponent imp
 
   ngOnInit() {
     super.ngOnInit();
+       /*
 
     // Wait for the parent event to be loaded.
     this.service.resources['event'].resourceLoaded.then((event) => {
@@ -53,6 +54,7 @@ export class ContractorCreateComponent extends FormioResourceCreateComponent imp
           });
         });
       });
-    });
+    }); */
+
   }
 }
