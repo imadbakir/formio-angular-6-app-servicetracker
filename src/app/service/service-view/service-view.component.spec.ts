@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {CustomerResourceComponent } from './customer-resource.component';
+import { ServiceViewComponent } from './service-view.component';
 
-describe('CustomerResourceComponent', () => {
-  let component: CustomerResourceComponent;
-  let fixture: ComponentFixture<CustomerResourceComponent>;
+describe('ServiceViewComponent', () => {
+  let component: ServiceViewComponent;
+  let fixture: ComponentFixture<ServiceViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomerResourceComponent ]
+      declarations: [ ServiceViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomerResourceComponent);
+    fixture = TestBed.createComponent(ServiceViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

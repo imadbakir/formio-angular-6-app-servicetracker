@@ -4,11 +4,11 @@ import { FormioResourceService, FormioResourceComponent } from 'angular-formio/r
 import { FormioAuthService } from 'angular-formio/auth';
 
 @Component({
-  selector: 'app-dealer-resource',
-  templateUrl: './dealer-resource.component.html',
-  styleUrls: ['./dealer-resource.component.scss']
+  selector: 'app-equipment-resource',
+  templateUrl: './equipment-resource.component.html',
+  styleUrls: ['./equipment-resource.component.scss']
 })
-export class DealerResourceComponent extends FormioResourceComponent implements OnInit {
+export class EquipmentResourceComponent extends FormioResourceComponent implements OnInit {
   constructor(public auth: FormioAuthService, public service: FormioResourceService, public route: ActivatedRoute) {
     super(service, route);
   }

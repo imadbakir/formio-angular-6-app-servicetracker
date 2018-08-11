@@ -9,11 +9,11 @@ import {
 import FormioUtils from 'formiojs/utils';
 
 @Component({
-  selector: 'app-participant-create',
-  templateUrl: './participant-create.component.html',
-  styleUrls: ['./participant-create.component.scss']
+  selector: 'app-equipment-create',
+  templateUrl: './equipment-create.component.html',
+  styleUrls: ['./equipment-create.component.scss']
 })
-export class ParticipantCreateComponent extends FormioResourceCreateComponent implements OnInit {
+export class EquipmentCreateComponent extends FormioResourceCreateComponent implements OnInit {
   constructor(
     public service: FormioResourceService,
     public auth: FormioAuthService,
@@ -27,10 +27,12 @@ export class ParticipantCreateComponent extends FormioResourceCreateComponent im
   ngOnInit() {
     super.ngOnInit();
 
+    /*
+
     // Wait for the parent event to be loaded.
     this.service.resources['event'].resourceLoaded.then((event) => {
 
-      // Wait for the participant form to load.
+      // Wait for the contractor form to load.
       this.service.formLoaded.then((form) => {
 
         // If they wish to have a custom registration form.
@@ -52,6 +54,6 @@ export class ParticipantCreateComponent extends FormioResourceCreateComponent im
           });
         });
       });
-    });
+    }); */
   }
 }

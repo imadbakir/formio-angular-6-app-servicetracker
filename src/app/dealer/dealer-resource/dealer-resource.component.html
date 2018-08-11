@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs" style="margin-bottom: 20px;">
+<ul class="nav nav-tabs" *ngIf="auth.is.dealer || auth.is.admin" style="margin-bottom: 20px;">
   <li class="nav-item">
     <a class="nav-link" routerLink="view" routerLinkActive="active">View</a>
   </li>
@@ -8,10 +8,10 @@
   <li class="nav-item">
     <a class="nav-link" routerLink="contractor" routerLinkActive="active">Contractor</a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item" *ngIf="auth.is.admin">
     <a class="nav-link" routerLink="edit" routerLinkActive="active">Edit</a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item" *ngIf="auth.is.admin">
     <a class="nav-link text-danger" routerLink="delete" routerLinkActive="active">Delete</a>
   </li>
 </ul>
